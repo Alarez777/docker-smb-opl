@@ -3,7 +3,7 @@
 FROM alpine:3.10
 
 # Your system user
-ARG USER='user'
+ARG USER='nobody'
 # SMB and SYSTEM password
 ARG PASS='password'
 ARG VERSION='4.11'
