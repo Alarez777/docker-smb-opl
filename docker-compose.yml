@@ -1,15 +1,12 @@
-version: '3.8'
+version: "3.8"
 
 services:
   samba:
-    container_name: docker_smb
-    tty: true
+    container_name: samba_nt1_ps2
     hostname: Docker
-    build:
-      context: .
-      shm_size: '100mb'
-      dockerfile: Dockerfile
+    image: smb_opl:lastest
+    restart: always
     volumes:
-      - "${SHARE_PATH}:/mnt/ps2smb"
+      - "${STORAGE_OPL}:/mnt/ps2smb"
     ports:
-      - "445:445/tcp"
+      - ${PORT}:445/tcp
