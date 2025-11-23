@@ -1,10 +1,8 @@
-version: "3.8"
-
 services:
   samba:
     container_name: samba_nt1_ps2
     hostname: Docker
-    image: smb_opl:lastest
+    image: smb_opl:latest
     restart: always
     volumes:
       - "${STORAGE_OPL}:/mnt/ps2smb"
