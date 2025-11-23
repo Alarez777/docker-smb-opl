@@ -8,7 +8,7 @@ games on your PS2 do the following.
 
 On your PC
 
-1. Execute 'docker build -t smb_opl:lastest .'
+1. Execute 'docker build -t smb_opl:latest .'
 2. Use docker-compose.yml to start the server
 
 On your PS2
